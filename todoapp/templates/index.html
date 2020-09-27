@@ -1,1 +1,24 @@
-<h1>this is the index</h1>
+{% extends "base.html" %}
+{% block content%}
+
+<header>
+	<div class="logo">
+		Todo App
+	</div>
+</header>
+<div class="main_section">
+	<form>
+		<h1>Login</h1>
+		<input type="text" name="username" placeholder="Username">
+		<input type="password" name="password" placeholder="Password">
+		<div>
+			<input type="submit" name="login" value="Login">
+			<a href="#">Sign up</a>
+		</div>
+		
+	</form>
+</div>
+
+
+
+{% endblock %}
