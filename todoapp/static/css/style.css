@@ -32,6 +32,11 @@ header .logo{
 	letter-spacing: 1px;
 	transition: 0.7s;
 	font-family: 'roboto', sans-serif;
+	border-bottom: 2px solid #D3C2FF;
+}
+
+header .logo:hover{
+	cursor: pointer;
 }
 
 .main_section{
@@ -41,14 +46,15 @@ header .logo{
 
 form {
 	background: rgba(255,255,255,0.12);
-
-	width: 340px;
-	height: 400px;
+	width: 28%;
+	/*margin: */
+	/*height: 400px;*/
 	top: 50%;
 	left: 50%;
 	position: absolute;
 	transform: translate(-50%,-50%);
 	padding: 40px 50px;
+	border-radius: 10px;
 }
 
 form h1{
@@ -61,15 +67,15 @@ form h1{
 
 
 form input[type="text"], input[type="password"]{
-		width: 100%;
+	width: 100%;
 	margin-bottom: 20px;
 	border: none;
 	text-align: center;
-	height: 40px;
+	height: 50px;
 	background-color:  rgba(255,255,255,0.43); 
 	border-radius: 5px;
 	color: #40297D;
-	font-size: 1em;
+	font-size: 0.9em;
 }
 
 form input[type="text"]::placeholder, input[type="password"]::placeholder{
@@ -78,16 +84,22 @@ form input[type="text"]::placeholder, input[type="password"]::placeholder{
 }
 
 form div{
-	display: block;
+	/*display: block;*/
+	display: flex;
+	width: 100%;
+	margin-top: 40px;
 }
 
 form div input[type="submit"],a {
-	margin: 0;
-	padding: 10px;
-	width: 110px;
-	height: 45px;
+	margin: 5px;
+	padding: 12px 0px;
+	/*width: 110px;*/
+	/*height: 45px;*/
 	border-radius: 30px;
 	background:none;
+	width: 50%;
+
+
 }
 
 
@@ -98,17 +110,36 @@ form div input[type="submit"]{
 	font-size: 1em;
 	font-weight: bold;
 	color: #BEB2D9;
+	/*padding: 1em 1.5em;*/
 	/*border-color: #9E84DB;*/
 
 }
 
-form div a{
-	background-color: red;
-	color: ##5836A5;
-	background-color: #9E84DB;
-	border-color: #5836A5;
-	padding: 1em 1.5em;
-	text-decoration: none;
-	/*border-color: #9E84DB;*/
+form div input[type="submit"]:hover{
+	cursor: pointer;
+}
 
+form div input[type="submit"]:focus{
+	outline: hidden;
+}
+
+form div a{
+	color: #5836A5;
+	background-color: #9E84DB;
+	border: 2px solid #5836A5;
+	font-size: 1em;
+	font-weight: bold;
+	/*padding: 1em 1.5em;*/
+	text-decoration: none;
+	justify-content: center;
+	display: flex;
+	/*align-items: center;*/
+	/*direction: center;*/
+}
+
+
+@media screen and (max-width: 980px) {
+  form{
+  	width: 300px;
+  }
 }
