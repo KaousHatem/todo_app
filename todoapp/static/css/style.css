@@ -5,7 +5,7 @@
   font-family: 'roboto', sans-serif;
 }
 
-body {
+.container {
  	background-image: linear-gradient(120deg,#342E5A,#3D2F55,#1E1A3B);
   	min-height: 100vh;
 }
@@ -41,20 +41,24 @@ header .logo:hover{
 
 .main_section{
 	/*background: black;*/
-	min-height: 80vh;
+	min-height: 100vh;
 }
 
 form {
 	background: rgba(255,255,255,0.12);
 	width: 28%;
 	/*margin: */
-	/*height: 400px;*/
+	/*height: 20vh;*/
 	top: 50%;
 	left: 50%;
 	position: absolute;
 	transform: translate(-50%,-50%);
 	padding: 40px 50px;
 	border-radius: 10px;
+}
+
+.signup-form{
+	top: 60vh;
 }
 
 form h1{
@@ -96,6 +100,10 @@ form div{
 	margin-top: 40px;
 }
 
+.signup-form div{
+	justify-content: center;
+}
+
 form div input[type="submit"],a {
 	margin: 5px;
 	padding: 12px 0px;
@@ -104,9 +112,9 @@ form div input[type="submit"],a {
 	border-radius: 30px;
 	background:none;
 	width: 50%;
-
-
 }
+
+
 
 
 form div input[type="submit"]{
@@ -129,7 +137,7 @@ form div input[type="submit"]:focus{
 	background-color: white;
 }
 
-form div a{
+.login-form div a{
 	color: #5836A5;
 	background-color: #9E84DB;
 	border: 2px solid #5836A5;
@@ -144,8 +152,44 @@ form div a{
 }
 
 
+.todo_main_section{
+	height: 100vh;
+	display: flex;
+	/*background-color: black;*/
+}
+.side-bar-menu{
+	display: flex;
+	flex-direction: column;
+	background-color: #11223E;
+	width: 18%;
+}
+
+.fa-list-ul{
+	color: white;
+}
+
+.side-bar-menu .todo_logo{
+	margin: 0;
+	background-color: #1F3251;
+	/*width: 18%;*/
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    /*height: 50px;*/
+    color: #DFDFDF;
+}
+.todo_logo span{
+	margin: 5vh;
+}
+.main_side{
+	width: 82%;
+	background-color: red;
+
+}
+
 @media screen and (max-width: 980px) {
-  form{
+ form{
   	width: 300px;
   }
   header{
