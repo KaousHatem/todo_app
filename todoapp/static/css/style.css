@@ -1,3 +1,4 @@
+{% load static %}
 * {
   margin: 0;
   padding: 0;
@@ -168,6 +169,8 @@ form div input[type="submit"]:focus{
 	color: white;
 }
 
+
+
 .side-bar-menu .todo_logo{
 	margin: 0;
 	background-color: #1F3251;
@@ -184,9 +187,46 @@ form div input[type="submit"]:focus{
 }
 .main_side{
 	width: 82%;
-	background-color: red;
-
+	background-color: #8B9AB4;
 }
+
+ul {
+	display: flex;
+	flex-direction: column;
+	/*padding-left: 30px;*/
+	padding-top: 40px;
+	list-style-type: none;
+}
+
+ul li{
+	margin: 20px 40px;
+	padding: 10px 0;
+	display: flex;
+	color: #DFDFDF;
+	background-color: red;
+	border-radius: 15px;
+}
+
+ul li img {
+	margin-right: 10px;	
+}
+
+.list-icon{
+  	width: 23px;
+	background: url("../images/list_icon.png") no-repeat center;
+	background-size: contain;
+}
+
+.list-text{
+	margin-left: 10px;
+	font-size: 1.2em;
+}
+
+
+.active .list-icon{
+	background: url("../images/list_icon_black.png") no-repeat !important;
+}
+
 
 @media screen and (max-width: 980px) {
  form{
